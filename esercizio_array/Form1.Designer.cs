@@ -42,9 +42,6 @@
             btn_n5 = new Button();
             btn_n6 = new Button();
             lst_risultato = new ListBox();
-            btn_nomi = new Button();
-            btn_numeri = new Button();
-            btn_saldi = new Button();
             SuspendLayout();
             // 
             // lst_nomi
@@ -118,6 +115,7 @@
             btn_n1.TabIndex = 7;
             btn_n1.Text = "Visualizzare cognome e nome dell'intestatario e il suo saldo";
             btn_n1.UseVisualStyleBackColor = true;
+            btn_n1.Click += btn_n1_Click;
             // 
             // btn_n2
             // 
@@ -178,46 +176,12 @@
             lst_risultato.Size = new Size(282, 304);
             lst_risultato.TabIndex = 19;
             // 
-            // btn_nomi
-            // 
-            btn_nomi.ForeColor = Color.Fuchsia;
-            btn_nomi.Location = new Point(50, 66);
-            btn_nomi.Name = "btn_nomi";
-            btn_nomi.Size = new Size(75, 23);
-            btn_nomi.TabIndex = 20;
-            btn_nomi.Text = "nomi";
-            btn_nomi.UseVisualStyleBackColor = true;
-            // 
-            // btn_numeri
-            // 
-            btn_numeri.ForeColor = Color.Fuchsia;
-            btn_numeri.Location = new Point(200, 66);
-            btn_numeri.Name = "btn_numeri";
-            btn_numeri.Size = new Size(75, 23);
-            btn_numeri.TabIndex = 21;
-            btn_numeri.Text = "numeri";
-            btn_numeri.UseVisualStyleBackColor = true;
-            // 
-            // btn_saldi
-            // 
-            btn_saldi.ForeColor = Color.Fuchsia;
-            btn_saldi.Location = new Point(346, 66);
-            btn_saldi.Name = "btn_saldi";
-            btn_saldi.Size = new Size(75, 23);
-            btn_saldi.TabIndex = 22;
-            btn_saldi.Text = "saldi";
-            btn_saldi.UseVisualStyleBackColor = true;
-            btn_saldi.Click += button3_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(800, 450);
-            Controls.Add(btn_saldi);
-            Controls.Add(btn_numeri);
-            Controls.Add(btn_nomi);
             Controls.Add(lst_risultato);
             Controls.Add(btn_n6);
             Controls.Add(btn_n5);
@@ -255,8 +219,5 @@
         private Button btn_n5;
         private Button btn_n6;
         private ListBox lst_risultato;
-        private Button btn_nomi;
-        private Button btn_numeri;
-        private Button btn_saldi;
     }
 }
